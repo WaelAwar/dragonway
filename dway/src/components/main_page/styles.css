@@ -1,0 +1,143 @@
+.main_cont {
+  font-size: 2rem;
+  margin-top: 85px;
+}
+
+.store {
+  text-align: center;
+  color: rgba(250, 246, 246, 0.5);
+  z-index: 6;
+  padding-top: 2rem;
+}
+.main_grid {
+  width: 100vw;
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 3.2rem;
+}
+.main_grid div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.buyy {
+  color: rgb(244, 237, 244);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 2rem;
+  text-transform: uppercase;
+  margin-top: -5px;
+  padding-top: 2rem;
+}
+.boxx {
+  padding-bottom: 3rem;
+}
+.boxx img {
+  padding-top: 1.5rem;
+  scale: 1.5;
+}
+
+.box {
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 0rem 0 2rem 0;
+  border-radius: 10px;
+  cursor: pointer;
+  z-index: 2;
+  transition: background 0.2s ease-in;
+}
+.box:hover {
+  transform: translateY(-15px);
+  background: rgba(140, 0, 255, 0.2);
+}
+
+.main_grid img {
+  width: 100px;
+  margin: 0;
+  padding-bottom: 3rem;
+}
+.pc img {
+  width: 30rem;
+  object-fit: contain;
+}
+
+.glow-on-hover {
+  width: 220px;
+  height: 50px;
+  border: none;
+  outline: none;
+  color: #fff;
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+}
+
+.glow-on-hover:before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+.glow-on-hover:active {
+  color: #000;
+}
+
+.glow-on-hover:active:after {
+  background: transparent;
+}
+
+.glow-on-hover:hover:before {
+  opacity: 1;
+}
+
+.glow-on-hover:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(187, 2, 248, 0.806);
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+@keyframes glowing {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}

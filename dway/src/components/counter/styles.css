@@ -1,0 +1,48 @@
+.count_cont {
+  background: rgb(30, 29, 29);
+  font-size: 2rem;
+  height: 580px;
+}
+
+.flexy {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  position: relative;
+}
+.logoimg img {
+  width: 65rem;
+  margin: 0;
+}
+.counter {
+  display: flex;
+  position: relative;
+  align-items: flex-end;
+  justify-content: space-around;
+  font-size: 13rem;
+  transform: translateY(-35%) translateX(-40%);
+}
+.counter span {
+  display: flex;
+  position: relative;
+  color: rgb(182, 178, 178);
+  text-shadow: none;
+}
+.flexy h4 {
+  color: rgb(197, 190, 190);
+  text-shadow: none;
+  transform: translateX(-30%);
+  font-size: 5rem;
+  text-align: right;
+  margin-right: 7rem;
+}
+.sold {
+  display: block;
+  text-align: right;
+  font-size: 6rem;
+  color: rgb(208, 201, 201);
+  margin-right: 7rem;
+  transform: translateY(-280%) translateX(1%);
+}
+.store1 {
+  text-align: center;
+}
