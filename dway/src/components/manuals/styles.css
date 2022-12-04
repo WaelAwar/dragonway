@@ -14,12 +14,12 @@
 .fuss {
   padding-top: 50px;
   padding-bottom: 20px;
-  background: rgb(35, 22, 45);
+  background: rgb(37, 36, 37);
 }
 .plass {
-  background: rgb(83, 45, 85);
+  background: rgb(34, 34, 33);
   padding-top: 50px;
-  padding-bottom: 20px;
+  padding-bottom: 21px;
 }
 .download {
   display: grid;
